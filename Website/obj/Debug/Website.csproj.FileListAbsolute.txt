@@ -1,0 +1,11 @@
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\bin\Website.dll.config
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\bin\Website.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\bin\Website.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\obj\Debug\Website.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Website\obj\Debug\Website.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Website\bin\Website.dll.config
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Website\bin\Website.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Website\bin\Website.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Website\obj\Debug\Website.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Website\obj\Debug\Website.pdb

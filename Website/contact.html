@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Contact Us</title>
+    <meta charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javaScript/libraries/angular.js"></script>
+    <script src="javaScript/app/app.js"></script>
+    <script src="javaScript/controllers/ContactController.js"></script>
+    <link href="css/newIndex.css" rel="stylesheet" />
+</head>
+<body ng-controller="ContactController as conCtrl">
+    <div class="pageHeader">
+        <a href="index.html"><img src="img/dummy logo.jpg" alt="companyLogo" id="logo" /></a>
+        <h1>Company Name</h1>
+
+    </div>
+    <div class="pageId">
+        <h2>Contact Us</h2>
+    </div>
+    <p id="customerSupportInstructions">
+        In order to contact, please fill out our form with your name, email, and your message to us.
+        Or, select one of the icons in order to contact us in one of our alternative methods.
+    </p>
+    <div class="row">
+        <div class="ticketForm col-6-md">
+            <form ng-keyup="conCtrl.checkForm(contactForm)" action="index.html" name="contactForm">
+
+                <fieldset>
+                    <legend><span class="number">1</span></legend>
+
+                    <label for="name">Name:</label>
+                    <input required type="text" id="name" name="user_name" />
+
+                    <label for="email">Email:</label>
+                    <input required type="email" id="email" name="user_email" />
+
+                </fieldset>
+                <fieldset>
+                    <legend><span class="number">2</span></legend>
+
+                    <label for="message">Describe the Problem:</label>
+                    <textarea required id="message" name="user_message"></textarea>
+
+                    <label for="url">Url with broken feature:</label>
+                    <input required type="text" id="url" name="url"/>
+
+                </fieldset>
+
+                <button ng-click="conCtrl.submitForm()" type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contactList col-6-md">
+            <h3>Alternative Methods For Contact</h3>
+            <ul id="contactMethods">
+                <li><a href="tel:123-456-7890"><img src="img/phone-logo.jpg" alt="phone logo" id="logo" />Phone: (123) 456-7890</a></li>
+                <li><a href="mailto:mgevers@vintagesoftware.com"><img src="img/email-logo.jpg" alt="email logo" id="logo" />Email: Company@gmail.com</a></li>
+                <li><a href="http://twitter.com/intent/tweet?screen_name=the_snipes"><img src="img/twitter-logo.jpg" alt="twitter logo" id="logo" />@Companie's twitter</a></li>
+                <li><a href="http://facebook.com"><img src="img/facebook-logo.png" alt="facebook logo" id="logo" />Companies facebook</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

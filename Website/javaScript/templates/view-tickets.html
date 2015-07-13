@@ -1,0 +1,209 @@
+﻿<div>
+    <div class="pageId">
+        <h2>View Tickets</h2>
+    </div>
+    <p id="viewTicketInstructions">
+        Select a ticket in order to view more information from that customer's review.  Note: on mobile
+        not all data is able to be seen without first selecting the ticket.
+    </p>
+
+    <div class="row buttonHolder">
+        <fieldset>
+            <legend class="OrderButtonLable"><span>Order By: </span></legend>
+
+            <div class="col-2-lg orderButton" id="testButton">
+                <button ng-click="ticketCtrl.orderID()" class="displayOrder" id="orderById">Ticket ID</button>
+            </div>
+
+            <div class="col-3-lg orderButton">
+                <button ng-click="ticketCtrl.orderPriority()" class="displayOrder" id="orderByPriority">Priority</button>
+            </div>
+
+            <div class="col-3-lg orderButton">
+                <button ng-click="ticketCtrl.orderWebsite()" class="displayOrder" id="orderBySite">Website</button>
+            </div>
+
+            <div class="col-4-lg orderButton">
+                <select class="col--lg orderButton" id="priorityDropDown">
+                    <option class="DropDownValue" value="5">5</option>
+                    <option class="DropDownValue" value="4">4</option>
+                    <option class="DropDownValue" value="3">3</option>
+                    <option class="DropDownValue" value="2">2</option>
+                    <option class="DropDownValue" value="1">1</option>
+                </select>
+                <button ng-click="ticketCtrl.searchPriority()" id="searchPriorityButton">Search by Priority</button>
+            </div>
+        </fieldset>
+    </div>
+    <div class="ticketTable" id="ticketTableDiv">
+
+        <table id="priorityTicketTable" border="1" style="width:100%">
+            <tr class="tableHeader">
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Message</th>
+                <th class="optional">Website</th>
+                <th class="optional">Webpage</th>
+                <th class="optional">Developer Team</th>
+            </tr>
+            <tr ng-repeat="ticket in ticketCtrl.tickets | orderBy:'-ticketInfo.priority'" ng-class="{true: 'tableData even priorityTable', false: 'tableData odd priorityTable'}[$even]">
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}"># {{ticket.ticketInfo.id}}</a></td>
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.ticketInfo.priority}}</a></td>
+                <td class="title"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.name}}</a></td>
+                <td class="discription"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.contactInfo.message | limitTo:70}}...</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.website}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.webpage}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.team.teamName}}</a></td>
+            </tr>
+        </table>
+
+        <table id="idTicketTable" border="1" style="width:100%">
+            <tr class="tableHeader">
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Message</th>
+                <th class="optional">Website</th>
+                <th class="optional">Webpage</th>
+                <th class="optional">Developer Team</th>
+            </tr>
+            <tr ng-repeat="ticket in ticketCtrl.tickets | orderBy:'ticketInfo.id'" ng-class="{true: 'tableData even idTable', false: 'tableData odd idTable'}[$even]">
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}"># {{ticket.ticketInfo.id}}</a></td>
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.ticketInfo.priority}}</a></td>
+                <td class="title"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.name}}</a></td>
+                <td class="discription"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.contactInfo.message | limitTo:70}}...</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.website}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.webpage}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.team.teamName}}</a></td>
+            </tr>
+        </table>
+
+        <table id="p1Table" border="1" style="width:100%">
+            <tr class="tableHeader">
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Message</th>
+                <th class="optional">Website</th>
+                <th class="optional">Webpage</th>
+                <th class="optional">Developer Team</th>
+            </tr>
+            <tr ng-repeat="ticket in ticketCtrl.tickets | filter: {ticketInfo: { priority: 1} } | orderBy: 'ticketInfo.id' " ng-class="{true: 'tableData even idTable', false: 'tableData odd idTable'}[$even]">
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}"># {{ticket.ticketInfo.id}}</a></td>
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.ticketInfo.priority}}</a></td>
+                <td class="title"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.name}}</a></td>
+                <td class="discription"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.contactInfo.message | limitTo:70}}...</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.website}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.webpage}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.team.teamName}}</a></td>
+            </tr>
+        </table>
+
+        <table id="p2Table" border="1" style="width:100%">
+            <tr class="tableHeader">
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Message</th>
+                <th class="optional">Website</th>
+                <th class="optional">Webpage</th>
+                <th class="optional">Developer Team</th>
+            </tr>
+            <tr ng-repeat="ticket in ticketCtrl.tickets | filter: {ticketInfo: { priority: 2} } | orderBy: 'ticketInfo.id' " ng-class="{true: 'tableData even idTable', false: 'tableData odd idTable'}[$even]">
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}"># {{ticket.ticketInfo.id}}</a></td>
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.ticketInfo.priority}}</a></td>
+                <td class="title"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.name}}</a></td>
+                <td class="discription"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.contactInfo.message | limitTo:70}}...</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.website}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.webpage}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.team.teamName}}</a></td>
+            </tr>
+        </table>
+
+        <table id="p3Table" border="1" style="width:100%">
+            <tr class="tableHeader">
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Message</th>
+                <th class="optional">Website</th>
+                <th class="optional">Webpage</th>
+                <th class="optional">Developer Team</th>
+            </tr>
+            <tr ng-repeat="ticket in ticketCtrl.tickets | filter: {ticketInfo: { priority: 3} } | orderBy: 'ticketInfo.id' " ng-class="{true: 'tableData even idTable', false: 'tableData odd idTable'}[$even]">
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}"># {{ticket.ticketInfo.id}}</a></td>
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.ticketInfo.priority}}</a></td>
+                <td class="title"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.name}}</a></td>
+                <td class="discription"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.contactInfo.message | limitTo:70}}...</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.website}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.webpage}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.team.teamName}}</a></td>
+            </tr>
+        </table>
+
+        <table id="p4Table" border="1" style="width:100%">
+            <tr class="tableHeader">
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Message</th>
+                <th class="optional">Website</th>
+                <th class="optional">Webpage</th>
+                <th class="optional">Developer Team</th>
+            </tr>
+            <tr ng-repeat="ticket in ticketCtrl.tickets | filter: {ticketInfo: { priority: 4} } | orderBy: 'ticketInfo.id' " ng-class="{true: 'tableData even idTable', false: 'tableData odd idTable'}[$even]">
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}"># {{ticket.ticketInfo.id}}</a></td>
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.ticketInfo.priority}}</a></td>
+                <td class="title"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.name}}</a></td>
+                <td class="discription"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.contactInfo.message | limitTo:70}}...</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.website}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.webpage}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.team.teamName}}</a></td>
+            </tr>
+        </table>
+
+        <table id="p5Table" border="1" style="width:100%">
+            <tr class="tableHeader">
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Message</th>
+                <th class="optional">Website</th>
+                <th class="optional">Webpage</th>
+                <th class="optional">Developer Team</th>
+            </tr>
+            <tr ng-repeat="ticket in ticketCtrl.tickets | filter: {ticketInfo: { priority: 5} } | orderBy: 'ticketInfo.id' " ng-class="{true: 'tableData even', false: 'tableData odd '}[$even]">
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}"># {{ticket.ticketInfo.id}}</a></td>
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.ticketInfo.priority}}</a></td>
+                <td class="title"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.name}}</a></td>
+                <td class="discription"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.contactInfo.message | limitTo:70}}...</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.website}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.webpage}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.team.teamName}}</a></td>
+            </tr>
+        </table>
+
+        <table id="websiteTicketTable" border="1" style="width:100%">
+            <tr class="tableHeader">
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Message</th>
+                <th class="optional">Website</th>
+                <th class="optional">Webpage</th>
+                <th class="optional">Developer Team</th>
+            </tr>
+            <tr ng-repeat="ticket in ticketCtrl.tickets | orderBy:'featureToFix.location.website'" ng-class="{true: 'tableData even priorityTable', false: 'tableData odd priorityTable'}[$even]">
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}"># {{ticket.ticketInfo.id}}</a></td>
+                <td><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.ticketInfo.priority}}</a></td>
+                <td class="title"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.name}}</a></td>
+                <td class="discription"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.contactInfo.message | limitTo:70}}...</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.website}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.location.webpage}}</a></td>
+                <td class="optional"><a ng-href="/ticket-entry/{{ticket.ticketInfo.id}}">{{ticket.featureToFix.team.teamName}}</a></td>
+            </tr>
+        </table>
+
+    </div>
+</div>

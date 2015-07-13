@@ -1,0 +1,79 @@
+﻿<div class="pageId">
+    <h2>View Ticket</h2>
+</div>
+<p id="viewTicketInstructions">
+</p>
+
+<div class="row">
+    <div class="col-6-lg">
+        <h3 id="ticketId">Ticket ID: # {{entryCtrl.ticket.ticketInfo.id}}</h3>
+        <h3 id="priority">Ticket Priority: {{entryCtrl.ticket.ticketInfo.priority}}/5</h3>
+        <!--<star-rating rating="entryCtrl.ticket.ticketInfo.priority"></star-rating>-->
+        <div ng-bind-html="entryCtrl.priorityVisual"></div>
+        <div class="row">
+            <div class="col-3-lg">
+                <h3 class="webLocation">Website: </h3><p class="variableInfo">{{entryCtrl.ticket.featureToFix.location.website}}</p>
+            </div>
+            <div class="col-3-lg">
+                <h3 class="webLocation">Webpage: </h3><p class="variableInfo">{{entryCtrl.ticket.featureToFix.location.webpage}}</p>
+            </div>
+            <div class="col-6-lg">
+                <h3 class="webLocation">Url: </h3><p class="variableInfo">{{entryCtrl.ticket.featureToFix.location.url}}</p>
+            </div>
+        </div>
+        <h4>Ticket Description:</h4>
+        <p id="ticketDescription">
+            {{entryCtrl.ticket.contactInfo.message}}
+        </p>
+    </div>
+    <div class="col-6-lg">
+        <ul class="ticketInfo">
+            <li class="non-highlightInfoBlock">
+                <img class="ticketLogo" src="img/name-icon.jpg" />Customer Name: {{entryCtrl.ticket.contactInfo.name}}
+            </li>
+
+            <!--<contact-button contact-info="entryCtrl.ticket.contactInfo"></contact-button>-->
+
+            <li class="non-highlightInfoBlock">
+                <div ng-bind-html="entryCtrl.logoMethodImage"></div>
+                <!--<a href="http://twitter.com/intent/tweet?screen_name=the_snipes">
+                    <img class="ticketLogo" src="img/twitter-logo.jpg" />Contact Method: Twitter
+                </a>-->
+            </li>
+
+            <li class="infoBlock">
+                <div ng-bind-html="entryCtrl.contactInfo"></div>
+                <!--<a href="http://twitter.com/intent/tweet?screen_name=the_snipes">
+                    <img class="ticketLogo" src="img/twitter-logo.jpg" />Contact Information: @MikeJones123
+                </a>-->
+            </li>
+        </ul>
+        <div id="teamNameDiv"class="row">
+            <div class="col-3-lg">
+                <h3>Team Responsible: </h3>
+            </div>
+            <div id="" class="col-9-lg">
+                <p id="teamName">{{entryCtrl.ticket.featureToFix.team.teamName}}</p>
+            </div>
+        </div>
+        <div id="teamMemberDiv" class="row">
+            <div class="col-3-lg">
+                <h3>Team Members: </h3>
+            </div>
+            <div class="col-3-lg" ng-repeat="dev in entryCtrl.ticket.featureToFix.team.teamMembers | orderBy: 'name'">
+                <p id="devName">{{dev.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="extraInfo">
+    <form class="devNotesForm" ng-submit="entryCtrl.submit()">
+        <h4>Ticket Notes: {{entryCtrl.resultMessage}}</h4>
+        <p id="extraTicketNotes">
+            <textarea class="devNotesDisplay" id="developerNotesTextArea" ng-model="entryCtrl.ticket.ticketInfo.devNotes"></textarea>
+        </p>
+        <div id="updateTicketDiv">
+            <input class="submitButton" type="submit" id="updateTicket" value="Update Ticket" />
+        </div>
+    </form>
+</div>

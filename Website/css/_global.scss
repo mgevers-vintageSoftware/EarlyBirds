@@ -1,0 +1,33 @@
+﻿//*******************************
+//        Applies to all 
+//*******************************/
+@import "_variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background: $pageBackground;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+img {
+    max-width: 100%;
+}
+

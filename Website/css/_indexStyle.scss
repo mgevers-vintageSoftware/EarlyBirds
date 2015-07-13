@@ -1,0 +1,72 @@
+﻿//*******************************
+//      Index Banner links 
+//*******************************/
+@import "_variables.scss";
+
+.links {
+    background-color: $headerBackground;
+    margin: 0;
+    padding: 0;
+}
+
+.bannerLinks li h3 {
+    height: 0;
+}
+
+.bannerLinks {
+    list-style: none;
+    text-align: center;
+}
+
+    .bannerLinks li {
+        display: inline-block;
+    }
+
+    .bannerLinks a {
+        padding: 10px 30px;
+        display: block;
+    }
+
+    .bannerLinks li:hover {
+       @include highlight($bannerHover);
+    }
+
+    .animate p {
+        padding: 0 5%;
+    }
+
+//*******************************
+//     Index Picture Format 
+//*******************************/
+
+#pictures {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    #pictures li {
+        float: left;
+        width: $twoPicturesWide;
+        margin: 2.5%;
+        padding: 10px;
+    }
+
+.pics {
+    margin: 0 auto;
+    text-align: center;
+}
+
+//******************************
+//          headings
+//******************************
+
+#galleryTitle {
+    margin: 0 0 -15px 0;
+    padding: 0;
+} 
+
+#aboutUs {
+    margin: 10px;
+    padding: 0 40px;
+}

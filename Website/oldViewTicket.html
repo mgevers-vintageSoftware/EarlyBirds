@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>View All Tickets</title>
+    <link href="css/newIndex.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="javaScript/loadTickets.js" type="text/javascript" charset="utf-8"></script>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div class="pageHeader">
+        <a href="index.html"><img src="img/dummy logo.jpg" alt="companyLogo" id="logo" /></a>
+        <h1>Company Name</h1>
+    </div>
+    <div class="pageId">
+        <h2>View Tickets</h2>
+    </div>
+
+    <p id="viewTicketInstructions">
+        Select a ticket in order to view more information from that customer's review.  Note: on mobile
+        not all data is able to be seen without first selecting the ticket.
+    </p>
+
+    <div class="row buttonHolder">
+        <div class="col-4-lg orderButton" id="testButton">
+            <button type="submit" class="displayOrder" id="orderById">Oder by Ticket ID</button>
+        </div>
+        <div class="col-4-lg orderButton">
+            <button type="submit" class="displayOrder" id="orderByPriority">Oder by Priority</button>
+        </div>
+        <div class="col-4-lg orderButton">
+            <form id="search">
+                <input type="number" id="searchBar" name="message_priority" />
+                <input id="searchButton" type="button" value="Search By Id">
+            </form>
+        </div>
+    </div>
+
+    <div class="ticketTable" id="ticketTableDiv">
+        <!--<table id="ticketTable" border="1" style="width:100%">
+            <tr class="tableHeader">
+                <th>Ticket ID</th>
+                <th>Priority</th>
+                <th>Title</th>
+                <th>Message</th>
+                <th class="optional">Customer Name</th>
+                <th class="optional">Contact Method</th>
+                <th class="optional">Contact Information</th>
+            </tr>
+            <tr class="tableData odd" id="ticket1">
+                <td><a href="ticketEntry1.html"># 0001</a></td>
+                <td><a href="ticketEntry1.html">5/5</a></td>
+                <td class="title"><a href="ticketEntry1.html">problem 1</a></td>
+                <td class="discription"><a href="ticketEntry1.html">This is the message for problem number 1.  Experimenting with how to deal with long messages inside a table</a></td>
+                <td class="optional"><a href="ticketEntry1.html">Mike Jones</a></td>
+                <td class="optional"><a href="ticketEntry1.html">Twitter</a></td>
+                <td class="optional"><a href="ticketEntry1.html">@MikeJones123</a></td>
+            </tr>
+            <tr class="tableData even">
+                <td># 0002</td>
+                <td>5/5</td>
+                <td class="title">problem 2</td>
+                <td class="discription">This is the message for problem number 2.  Experimenting with how to deal with long messages inside a table</td>
+                <td class="optional">Mike Jones</td>
+                <td class="optional">Twitter</td>
+                <td class="optional">@MikeJones123</td>
+            </tr>
+            <tr class="tableData odd">
+                <td># 0003</td>
+                <td>4/5</td>
+                <td class="title">problem 3</td>
+                <td class="discription">This is the message for problem number 3.  Experimenting with how to deal with long messages inside a table</td>
+                <td class="optional">Mike Jones</td>
+                <td class="optional">Twitter</td>
+                <td class="optional">@MikeJones123</td>
+            </tr>
+            <tr class="tableData even">
+                <td># 0004</td>
+                <td>4/5</td>
+                <td class="title">problem 4</td>
+                <td class="discription">This is the message for problem number 4.  Experimenting with how to deal with long messages inside a table</td>
+                <td class="optional">Mike Jones</td>
+                <td class="optional">Twitter</td>
+                <td class="optional">@MikeJones123</td>
+            </tr>
+            <tr class="tableData odd">
+                <td># 0005</td>
+                <td>3/5</td>
+                <td class="title">problem 5</td>
+                <td class="discription">This is the message for problem number 5.  Experimenting with how to deal with long messages inside a table</td>
+                <td class="optional">Mike Jones</td>
+                <td class="optional">Twitter</td>
+                <td class="optional">@MikeJones123</td>
+            </tr>
+            <tr class="tableData even">
+                <td># 0006</td>
+                <td>2/5</td>
+                <td class="title">problem 6</td>
+                <td class="discription">This is the message for problem number 6.  Experimenting with how to deal with long messages inside a table</td>
+                <td class="optional">Mike Jones</td>
+                <td class="optional">Twitter</td>
+                <td class="optional">@MikeJones123</td>
+            </tr>
+            <tr class="tableData odd">
+                <td><a href="ticketEntry7.html"># 0007</a></td>
+                <td><a href="ticketEntry7.html">1/5</a></td>
+                <td class="title"><a href="ticketEntry7.html">problem 7</a></td>
+                <td class="discription"><a href="ticketEntry7.html">This is the message for problem number 1.  Experimenting with how to deal with long messages inside a table</a></td>
+                <td class="optional"><a href="ticketEntry7.html">Mike Jones</a></td>
+                <td class="optional"><a href="ticketEntry7.html">Facebook</a></td>
+                <td class="optional"><a href="ticketEntry7.html">Mike James Jones</a></td>
+            </tr>
+        </table>-->
+    </div>
+    <script src="javaScript/test.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

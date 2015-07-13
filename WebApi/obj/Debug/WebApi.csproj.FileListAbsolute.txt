@@ -1,0 +1,46 @@
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\WebApi.dll.config
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\WebApi.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\WebApi.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\WebApi.dll.CodeAnalysisLog.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\WebApi.dll.lastcodeanalysissucceeded
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\System.Web.Cors.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\System.Web.Http.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\Domain.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\System.Web.Http.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\obj\Debug\WebApi.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\obj\Debug\WebApi.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\Service.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\WebAPI\bin\Service.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\WebApi.dll.config
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\WebApi.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\WebApi.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\WebApi.dll.CodeAnalysisLog.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\WebApi.dll.lastcodeanalysissucceeded
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\Service.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\System.Web.Cors.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\System.Web.Http.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\Domain.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\Service.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\System.Web.Http.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\obj\Debug\WebApi.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\obj\Debug\WebApi.pdb

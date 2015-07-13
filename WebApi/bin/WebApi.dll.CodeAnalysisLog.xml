@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\bin\WebApi.dll">
+   <Modules>
+    <Module Name="webapi.dll">
+     <Namespaces>
+      <Namespace Name="WebApi.Controllers">
+       <Types>
+        <Type Name="TicketController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetEnum(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-07-09 18:44:32Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\Controllers" File="TicketController.cs" Line="23">In method 'TicketController.GetEnum(string)', replace the call to 'string.ToLower(CultureInfo)' with String.ToUpperInvariant().</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TicketInformationController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetEnum(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-07-09 18:44:32Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\WebAPI\Controllers" File="TicketInformationController.cs" Line="23">In method 'TicketInformationController.GetEnum(string)', replace the call to 'string.ToLower(CultureInfo)' with String.ToUpperInvariant().</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308">
+   <Name>Normalize strings to uppercase</Name>
+   <Description>Strings should be normalized to upper-case.</Description>
+   <Resolution Name="ToUpperInvariant">In method {0}, replace the call to {1} with String.ToUpperInvariant().</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

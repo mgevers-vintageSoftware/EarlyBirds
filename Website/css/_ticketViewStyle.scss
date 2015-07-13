@@ -1,0 +1,100 @@
+﻿//********************************
+//      View Ticket Format
+//********************************
+@import "_variables.scss";
+
+#viewTicketInstructions {
+    padding: 10px;
+}
+
+.ticketTable {
+    padding: 0 40px;
+}
+
+td {
+    max-width: 250px;
+    text-align: center;
+    max-height: 20px;
+}
+
+.even {
+    background-color: $tableOdd;
+}
+
+.odd {
+    background-color: $tableEven;
+}
+
+.title {
+    width: 140px;
+}
+
+.discription {
+    min-width: 200px;
+}
+
+.tableHeader {
+    background-color: $headerBackground;
+}
+
+.tableData:hover {
+    @include highlight($highlightColorDataTable);
+}
+
+.orderButton {
+    align-items: center;
+}
+
+.displayOrder {
+    width: 100%;
+}
+
+#searchBar {
+    width: 45%;
+    color: black;
+}
+
+#search {
+                width:100%;
+                margin:0 auto;
+                height: 65px;
+                background-color:$formButtonColor;
+}
+
+.searchBar {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0 solid #dbdbdb;
+}
+#searchPriorityButton {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                width: 150px;
+                background-color:#eee;
+                border: 2px solid $formButtonBorder;
+                color:#000;
+}
+.searchbutton:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+
+.DropDownValue {
+    padding: 10px;
+    height: 30px;
+}
+
+#priorityDropDown {
+    padding: 10px;
+    margin: 0 15px;
+    width: 100px;
+    height: 65px;
+    font-size: 30px;
+    color: black;
+}
+
+#priorityTicketTable, #p1Table, #p2Table, #p3Table, #p4Table, #p5Table, #websiteTicketTable {
+    position: absolute;
+    visibility: hidden;
+}

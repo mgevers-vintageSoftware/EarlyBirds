@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="earlybirds">
+<head>
+    <title>Early Bird</title>
+	<meta charset="utf-8" />
+    <link href="/css/newIndex.css" rel="stylesheet" />
+    <base href="/">
+</head>
+<body>
+    <div class="pageHeader">
+        <a ng-href="/"><img src="img/bird-logo.jpg" alt="companyLogo" id="logo" /></a>
+        <h1>Early Birds Support</h1>
+    </div>
+    
+    <ng-view></ng-view>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javaScript/libraries/angular.js"></script>
+    <script src="/javaScript/libraries/angular-route.js"></script>
+    <script src="/javaScript/app/earlybirds.module.js"></script>
+    <script src="/javaScript/app/earlybirds.routes.js"></script>
+    <script src="/javaScript/controllers/TicketEntryController.js"></script>
+    <script src="javaScript/controllers/TicketTableController.js"></script>
+    <script src="javaScript/controllers/ContactController.js"></script>
+    <script src="javaScript/controllers/FormController.js"></script>
+</body>
+</html>

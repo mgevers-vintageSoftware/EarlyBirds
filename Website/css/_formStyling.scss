@@ -1,0 +1,135 @@
+﻿//*******************************
+//          Form Styling
+//*******************************/
+@import "_variables.scss";
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form {
+    max-width: $formMaxWidth;
+    margin: 20px auto;
+    padding: 10px 20px 0 20px;
+    //background: #d4e7d8;
+    background: $formBackground;
+    border-radius: $formBorderRadius;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    background: $formTextBackground;
+    border: none;
+    font-size: $formTextSize;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: $boxBackground;
+    color: $formInputFontColor;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 5px 0;
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: $formButtonColor;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid $formButtonBorder;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 0;
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0;
+}
+
+    label.light {
+        font-weight: 300;
+        display: inline;
+    }
+
+.number {
+    background-color: $formNumberBackground;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+}
+
+#developerNotesTextArea {
+    background: $highlightColorContactMethod;
+    min-height: 100px;
+    //resize: none;
+}
+
+#updateTicket {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#updateTicketDiv {
+    text-align: center;
+    margin: -40px auto;
+}
+
+.devNotesForm {
+    background: $pageBackground;
+    max-width: 95%;
+}
+
+.submitButton {
+    max-width: 150px;
+}
+
+.devNotesDisplay {
+    margin: -10px 0 25px -10px;
+    padding: 10px;
+}

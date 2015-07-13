@@ -1,0 +1,47 @@
+﻿@import "_mixin.scss";
+
+$pageBackground: #fcfcff;
+
+$formMaxWidth: 400px;
+$formBackground: #c4s7c8;
+$formBorderRadius: 8px;
+$formTextBackground: rgba(255,255,255,0.1);
+$formTextSize: 16px;
+$boxBackground:  #e8eeef;
+$formInputFontColor: #474747;
+$formButtonColor: #4bc970;
+$formButtonBorder: #3ac162;
+$formNumberBackground: #5fcf80;
+
+//Uncomment to switch to blue form
+//Comment out to swtich to green form
+$formBackground: #DAE1FF;
+$formButtonColor: #436EEE;
+$formButtonBorder: #244FCD;
+$formNumberBackground: #345FDD;
+
+$headerBackground: #00B2EE;
+$headerStripe: #0094ff;
+$bannerHover: #71C6FF;
+
+$threePicturesWide: 28.3333%;
+$twoPicturesWide: 45%;
+$onePictureWide: 95%;
+
+$highlightColorContactMethod: #eee;
+$highlightColorDataTable: #D1F0FF;
+
+$logoSizeSmall: 50px;
+$logoSizeMedium: 70px;
+$logoSizeLarge: 94px;
+
+$tableOdd: #EDEFFF;
+$tableEven: #F8FFFF;
+
+
+
+
+@mixin highlight($color) {
+    background-color: $color;
+    border-radius: 20px;
+}

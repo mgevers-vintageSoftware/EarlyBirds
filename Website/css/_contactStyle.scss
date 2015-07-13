@@ -1,0 +1,39 @@
+﻿//*******************************
+//      Contact Page Format 
+//*******************************
+@import "_variables.scss";
+
+#customerSupportInstructions {
+    padding: 10px 10px 20px 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#contactMethods {
+    list-style: none;
+}
+
+#contactMethods #logo {
+    max-width: 35px;
+    margin: 10px;
+}
+
+#contactMethods li {
+    display:block;
+    padding: 0 0 5px 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#contactMethods a {
+        padding: 10px 5px;
+        display: block;
+    }
+
+.contactList h3 {
+    text-align: center;
+}
+
+#contactMethods li:hover{
+    @include highlight($highlightColorContactMethod);
+}

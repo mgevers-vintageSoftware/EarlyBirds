@@ -1,0 +1,20 @@
+﻿//*******************************
+//          Animations 
+//*******************************/
+
+@keyframes example {
+    0% {
+        color: firebrick;
+        color: black;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.animate p {
+    padding: 25px 10px;
+    animation: example 5s infinite;
+    text-align: justify;
+}

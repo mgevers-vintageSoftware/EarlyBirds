@@ -1,0 +1,74 @@
+﻿//*******************************
+//     fixes for screen size 
+//*******************************/
+@import "_variables.scss";
+
+@media screen and (min-width: 800px) {
+      #pictures li {
+        width: $threePicturesWide;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .pageHeader h1 {
+        padding: 0 0 0 75px;
+        margin: 15px;
+    }
+
+    .pageHeader #logo {
+        width: $logoSizeMedium;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .pageHeader h1{
+        font-size: 2em;
+        padding: 0 0 0 75px;
+        margin: 15px;
+    }
+
+    #pictures li {
+        width: $onePictureWide;
+    }
+
+    .pageId h2{
+        font-size: 20px;
+    }
+
+    .infoBlock, .non-highlightInfoBlock {
+        font-size: 16px;
+    }
+
+    #contactMethods li{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #pictures li {
+        width: $onePictureWide;
+    }
+
+    .pageHeader #logo {
+        width: $logoSizeSmall;
+    }
+
+    .pageHeader h1 {
+        padding: 0 0 0 50px;
+    }
+
+    .infoBlock, .non-highlightInfoBlock {
+        font-size: 12px;
+    }
+
+    #contactMethods li{
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .optional {
+        visibility: hidden;
+        position: absolute;
+    }
+}

@@ -1,0 +1,14 @@
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Service.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Service.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\bin\Debug\Domain.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\obj\Debug\Service.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Service\obj\Debug\Service.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Service\bin\Debug\Service.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Service\bin\Debug\Service.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Service\bin\Debug\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Service\bin\Debug\Domain.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Service\obj\Debug\Service.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Service\obj\Debug\Service.pdb

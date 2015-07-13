@@ -1,0 +1,20 @@
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\bin\Debug\Test.exe.config
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\bin\Debug\Test.exe
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\bin\Debug\Test.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\bin\Debug\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\bin\Debug\Domain.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\obj\Debug\Test.exe
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\obj\Debug\Test.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\bin\Debug\Service.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Test\bin\Debug\Service.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\bin\Debug\Test.exe.config
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\bin\Debug\Test.exe
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\bin\Debug\Test.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\bin\Debug\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\bin\Debug\Service.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\bin\Debug\Domain.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\bin\Debug\Service.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\obj\Debug\Test.exe
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Test\obj\Debug\Test.pdb

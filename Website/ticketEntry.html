@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Ticket Entry</title>
+    <link href="css/newIndex.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javaScript/libraries/angular.js"></script>
+    <script src="javaScript/app/app.js"></script>
+    <script src="javaScript/controllers/TicketEntryController.js"></script>
+    <script src="javaScript/directives/star-rating.directive.js"></script>
+    <meta charset="utf-8" />
+</head>
+<body ng-controller="TicketEntryController as entryCtrl">
+    <div class="pageHeader">
+        <a href="index.html"><img src="img/dummy logo.jpg" alt="companyLogo" id="logo" /></a>
+        <h1>Company Name</h1>
+    </div>
+    <div class="pageId">
+        <h2>Ticket View - {{entryCtrl.tickets.featureToFix.name}}</h2>
+    </div>
+
+    <p id="viewTicketInstructions">
+    </p>
+
+    <div class="row">
+        <div class="col-6-lg">
+            <h3 id="ticketId">Ticket ID: # {{entryCtrl.tickets.ticketInfo.id}}</h3>
+            <h3 id="priority">Ticket Priority: {{entryCtrl.priority}}/5</h3>
+            <div ng-bind-html="entryCtrl.priorityVisual"></div>
+            <!--<star-rating rating="entryCtrl.priority"></star-rating>-->
+            <h4>Ticket Description:</h4>
+            <p id="ticketDescription">
+                {{entryCtrl.tickets.contactInfo.message}}
+            </p>
+        </div>
+        <div class="col-6-lg">
+            <ul class="ticketInfo">
+                <li class="non-highlightInfoBlock">
+                    <img class="ticketLogo" src="img/name-icon.jpg" />Customer Name: {{entryCtrl.tickets.contactInfo.name}}
+                </li>
+
+                <li class="infoBlock">
+                    <div ng-bind-html="entryCtrl.logoMethodImage"></div>
+                    <!--<a href="http://twitter.com/intent/tweet?screen_name=the_snipes">
+                        <img class="ticketLogo" src="img/twitter-logo.jpg" />Contact Method: Twitter
+                    </a>-->
+                </li>
+
+                <li class="infoBlock">
+                    <div ng-bind-html="entryCtrl.contactInfo"></div>
+                    <!--<a href="http://twitter.com/intent/tweet?screen_name=the_snipes">
+                        <img class="ticketLogo" src="img/twitter-logo.jpg" />Contact Information: @MikeJones123
+                    </a>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="extraInfo">
+        <h4>Ticket Notes:</h4>
+        <p id="extraTicketNotes">
+            <textarea id="developerNotesTextArea">
+                {{entryCtrl.tickets.ticketInfo.devNotes}}
+            </textarea>
+        </p>
+    </div>
+    <div id="updateTicketDiv">
+        <button id="updateTicket" type="submit"> Update Ticket </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain\bin\Debug\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain\bin\Debug\Domain.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain\bin\Debug\Domain.dll.CodeAnalysisLog.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain\bin\Debug\Domain.dll.lastcodeanalysissucceeded
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain\obj\Debug\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain\obj\Debug\Domain.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Domain\bin\Debug\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Domain\bin\Debug\Domain.pdb
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Domain\bin\Debug\Domain.dll.CodeAnalysisLog.xml
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Domain\bin\Debug\Domain.dll.lastcodeanalysissucceeded
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Domain\obj\Debug\Domain.dll
+C:\Users\mgevers\Documents\Visual Studio 2015\Projects\EarlyBirds - Copy\Domain\obj\Debug\Domain.pdb

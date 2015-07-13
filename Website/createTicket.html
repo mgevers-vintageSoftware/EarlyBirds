@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Create Ticket</title>
+    <meta charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javaScript/libraries/angular.js"></script>
+    <script src="javaScript/app/app.js"></script>
+    <script src="javaScript/controllers/FormController.js"></script>
+    <link href="css/newIndex.css" rel="stylesheet" />
+</head>
+<body ng-controller="FormController as formCtrl">
+    <div class="pageHeader">
+        <a href="index.html"><img src="img/dummy logo.jpg" alt="companyLogo" id="logo" /></a>
+        <h1>Company Name</h1>
+
+    </div>
+    <div class="pageId">
+        <h2>Create Ticket</h2>
+    </div>
+    <p id="customerSupportInstructions">
+        In order to contact, please fill out our form with your name, email, and your message to us.
+        Or, select one of the icons in order to contact us in one of our alternative methods.
+    </p>
+    <div class="row">
+        <div class="ticketForm col-6-md">
+            <form ng-keyup="formCtrl.checkForm(ticketForm)" action="index.html" name="ticketForm">
+
+                <fieldset>
+                    <legend><span class="number">1</span></legend>
+
+                    <label for="name">Feature Name:</label>
+                    <input required type="text" id="name" name="customer_name" />
+
+                    <label for="website">Website name:</label>
+                    <input required type="text" id="website" name="customer_email" />
+
+                    <label for="webpage">Webpage name:</label>
+                    <input required type="text" id="webpage" name="customer_email" />
+
+                </fieldset>
+                <!--<fieldset>
+                    <legend><span class="number">2</span></legend>
+
+                    <label for="website">Customer Message:</label>
+                    <input required type="text" id="website" name="website" />
+
+                    <label for="message">Customer Message:</label>
+                    <input required type="text" id="webpage" name="webpage" />
+
+                </fieldset>-->
+                <fieldset>
+                    <legend><span class="number">2</span></legend>
+
+                    <label for="message">Customer Message:</label>
+                    <textarea required id="message" name="user_message"></textarea>
+
+                    <label for="ticketPriority">Message Priority (1 - 5) / 5:</label>
+                    <input required ng-click="formCtrl.checkForm()" ng-disabled="ticketForm.$invalid" type="number" id="ticketPriority" name="message_priority" />
+
+                </fieldset>
+
+                <button ng-click="formCtrl.submitForm()" type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contactList col-6-md">
+            <h3>Method of Contact</h3>
+            <ul id="contactMethods" name="contactMethods">
+                <li><input type="radio" name="contact" value="Phone" checked="checked"><img src="img/phone-logo.jpg" alt="phone logo" id="logo"/>Phone</li>
+                <li><input type="radio" name="contact" value="Email"><img src="img/email-logo.jpg" alt="email logo" id="logo"/>Email: Company@gmail.com</li>
+                <li><input type="radio" name="contact" value="Twitter"><img src="img/twitter-logo.jpg" alt="twitter logo" id="logo"/>@Companie's twitter</li>
+                <li><input type="radio" name="contact" value="Facebook"><img src="img/facebook-logo.png" alt="facebook logo" id="logo"/>Companies facebook</li>
+                <li><input type="radio" name="contact" value="Website"><img src="img/internet-logo.png" alt="internet logo" id="logo"/>Companies websight</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
